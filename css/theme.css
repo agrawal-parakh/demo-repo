@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+@font-face {
+    font-family: "BoldFont";
+    src: url("../Fonts/Nexa-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "LightFont";
+    src: url("../Fonts/Nexa-Light.otf") format("opentype");
+}
+
+:root {
+    /* --dark-blue: #2a2d3e; */
+    --light-blue: #9cbfda;
+    --bright-blue: #0173b2;
+    --dark-blue: #021433;
+    --bg-blue:#8fcaf1;
+    --grey: #636668;
+    --light-grey: #ccc;
+    --dark-grey: #525659;
+    --mix-grey: #777;
+    --black: #000;
+    --white: #fff;
+    --whitesmoke: #F5F5F5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+section {
+    padding: 2rem 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: BoldFont;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    /* text-transform: capitalize; */
+    /* text-align: center; */
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-family: LightFont;
+    margin-bottom: 1.5rem;
+    color: var(--dark-blue);
+    font-size: 1rem;
+    line-height: 1.3rem;
+    word-spacing: 0.1rem;
+}
+
+select {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    background-color: var(--white);
+    border: 1px solid var(--light-grey);
+}
+
+option {
+    font-family: LighFont;
+    font-size: 1.1rem;
+    color: var(--grey);
+}
+
+label {
+    /* margin-top: 1rem; */
+    font-family: LightFont;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+}
+
+input {
+    font-size: 1rem;
+    padding: 0.7rem;
+    /* border-radius: 0.4rem; */
+    border: none;
+    outline: none;
+    /* caret-color: var(--dark-grey); */
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+::placeholder {
+    color: var(--light-grey);
+    font-size: 0.8rem;
+    font-family: BoldFont;
+}
+
+/* input:focus {
+    border: 0.1rem solid var(--bright-blue);
+  } */
+
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label::before {
+    content: "\2714";
+    border: 0.1rem solid var(--black);
+    padding: 0.1rem;
+    color: var(--white);
+}
+
+input[type="checkbox"]:checked+label::before {
+    background-color: var(--white);
+    color: var(--bright-blue);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label::before {
+    content: "\2714";
+    border: 0.14rem solid var(--dark-grey);
+    color: transparent;
+    margin-right: 1rem;
+    border-radius: 70%;
+    background-color: var(--light-grey);
+    opacity: 45%;
+    font-size:1rem;
+}
+
+input[type="radio"]:checked+label::before {
+    opacity: 100%;
+    border: 0.1rem solid var(--dark-grey);
+}
+
+input[type="radio"]:checked+label::before {
+    background-color: var(--white);
+    color: var(--bright-blue);
+}
+
+input[type=button] {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+input[type="file"] {
+    padding: 0;
+}
+
+input[type="date"]:enabled {
+    border: 0.2rem solid var(--mix-grey);
+    color: var(--mix-grey);
+}
+
+input[type="date"]:focus {
+    border: 1px solid var(--light-grey);
+    color: var(--light-grey);
+}
+
+textarea {
+    margin-bottom: 1rem;
+    border: 0.1rem solid var(--light-grey);
+    /* min-width: 165px;
+    max-width: 860px; */
+    width: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 0.7rem 0.5rem;
+    /* border-radius: 0.4rem; */
+    border-radius: 0rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.primary-button {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: 0.1rem solid var(--white);
+ 
+}
+
+.primary-button:hover {
+    background-color: var(--white);
+    color: var(--dark-blue);
+    border: 0.1rem solid var(--dark-blue);
+   
+}
+
+.secondary-button {
+    background-color: var(--white);
+    color: var(--dark-blue);
+    border: 0.1rem solid var(--dark-blue);
+}
+
+.secondary-button:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: 0.1rem solid var(--dark-blue);
+}
+
+.tertiary-button{
+    background-color: var(--bright-blue);
+    color: white;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    font-family: BoldFont;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--dark-blue);
+    font-family: LightFont;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    margin-right: 0.3rem;
+    font-family: BoldFont;
+}
+
+/* nav {
+    background-color: var(--white);
+} */
+
+@media only screen and (min-width: 768px) {
+    section {
+        padding: 3rem;
+    }
+    /* header{
+        padding: 1.5rem;
+    } */
+
+    h1, h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    h3 {
+        font-size: 2.2rem;
+    }
+    h4 {
+        font-size: 1.7rem;
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+    h6 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+    label {
+        font-size: 1.3rem;
+    }
+    input {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+        /* border-radius: 0.5rem; */
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    section {
+        padding: 5rem 4rem;
+    }
+    h1, h2 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+    h6 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    label {
+        font-size: 1.4rem;
+    }
+    
+}
+
+
+ /* @media only screen and (min-width: 1300px) {
+    input[type="radio"]+label::before {
+        border: 0.12rem solid var(--dark-grey);
+    }
+}   */
+
