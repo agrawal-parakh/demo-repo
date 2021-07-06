@@ -1,12 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cofee Shop</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
 </head>
+
 <body>
-    <h1>this is index file</h1>
-    <h2>something</h2>
+    <!-- header starts -->
+    <header>
+        <div class="navigation-container">
+            <figure class="header-img">
+                <img src="../images/logo.png" alt="no-header-image-found">
+            </figure>
+            <div class="header-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="desktop-header-list">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Contact-Us</a></li>
+                </ul>
+            </div>
+
+            <div class="desktop-header-icons">
+                <i class="fas fa-shopping-bag"></i>
+                <i class="fas fa-user-plus"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+    <!-- header  portion ends -->
+
+    <!-- image-gallery starts -->
+    <section class="image-gallery-section">
+
+
+        <div class="desktop-crauser">
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+
+        <figure class="image-gallery-portion-common">
+            <img src="../images/image-gallery.jpeg" alt="no_image_found_for_crausel">
+        </figure>
+    </section>
+
+    <!-- we have to add functionalities here #backend-work  -->
+    <!-- image gallery ends  -->
+
+
+  
+
+
+
+    <!-- 
+
+         how-we-works-section 
+         features 
+     -->
+
+
+    <!-- backend-functionality -added-in-this-portion -->
+
+    <section class="how-it-works-section">
+        <div class="how-it-works-container">
+            <div class="how-it-works-heading">
+                <h2>How it works</h2>
+            </div>
+            <div class="how-it-works-paragraph common-para-class">
+                <p>Various facilities are provided here.But there is a protocol which needs to be followed so that you
+                    get the service at its best.</p>
+            </div>
+            <div class="how-it-works-button-all">
+                <div class="how-it-works-button">
+                    <button class="common-how-it-work-class active-btn-1" onclick="show1()"
+                        style="border: 0.1rem solid var(--bright-blue);">
+                        <span class="number active-number-1"
+                            style="font-size: 1.2rem; color: var(--bright-blue);">01</span>
+                        <span class="text active-text-1" style="font-size: 1.3rem; color: var(--dark-blue);">Excellent Food
+                            </span>
+                    </button>
+
+                    <div class="another-1">
+                        <figure class="how-it-works-img-container" style="display: block;">
+                            <img src="../images/exceelent Food.png"
+                                alt="" class="img-container-img">
+                            <figcaption class="text-img-container common-para-class">
+                                <h6>Excellent Food</h6>
+                                <p>This depicts that user have to fix appointment first when it selects a particular
+                                    food
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="how-it-works-button">
+                    <button onclick="show2()" class="common-how-it-work-class"
+                        style="border: 0.1rem solid var(--dark-grey);">
+                        <span class="number" style="font-size: 1.1rem; color: var(--light-grey);">02</span>
+                        <span class="text" style="font-size: 1.2rem; color: var(--light-grey);">Cold Cofee
+                            </span>
+                    </button>
+
+                    <div class="another-1">
+                        <figure class="how-it-works-img-container hide-img-container" style="display: none;">
+                            <img src="../images/cold-cofee.jpeg"
+                                alt="" class="img-container-img">
+                            <figcaption class="text-img-container common-para-class">
+                                <h6>Cold Cofee</h6>
+                                <p>This depicts that user have to fix appointment first when it selects a particular
+                                    food
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="how-it-works-button">
+
+                    <button onclick="show3()" class="common-how-it-work-class"
+                        style="border: 0.1rem solid var(--dark-grey);">
+                        <span class="number" style="font-size: 1.1rem; color: var(--light-grey);">03</span>
+                        <span class="text" style="font-size: 1.2rem; color: var(--light-grey);">Fast Delivery
+                            </span>
+                    </button>
+
+
+                    <div class="another-1">
+                        <figure class="how-it-works-img-container hide-img-container" style="display: none;">
+                            <img src="../images/fast-delivery.jpg"
+                                alt="" class="img-container-img">
+                            <figcaption class="text-img-container common-para-class">
+                                <h6>Fast Delivery</h6>
+                                <p>This depicts that user have to fix appointment first when it selects a particular
+                                    food
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="how-it-works-button">
+
+                    <button onclick="show4()" class="common-how-it-work-class"
+                        style="border: 0.1rem solid var(--dark-grey);">
+                        <span class="number" style="font-size: 1.1rem; color: var(--light-grey);">04</span>
+                        <span class="text" style="font-size: 1.2rem; color: var(--light-grey);">Hygenic</span>
+                    </button>
+
+                    <div class="another-1">
+                        <div class="how-it-works-img-container hide-img-container" style="display: none;">
+                            <img src="../images/hygeine.png"
+                                alt="" class="img-container-img">
+                            <figcaption class="text-img-container common-para-class">
+                                <h6>Hygenic</h6>
+                                <p>This depicts that user have to fix appointment first when it selects a particular
+                                    food
+                                </p>
+                            </figcaption>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="how-it-works-button">
+
+                    <button onclick="show5()" class="common-how-it-work-class"
+                        style="border: 0.1rem solid var(--dark-grey);">
+                        <span class="number" style="font-size: 1.1rem; color: var(--light-grey);">05</span>
+                        <span class="text" style="font-size: 1.2rem; color: var(--light-grey);">Excellent Workers
+                            </span>
+                    </button>
+
+                    <div class="another-1">
+                        <figure class="how-it-works-img-container hide-img-container" style="display: none;">
+                            <img src="../images/excellent workers.jpeg"
+                                alt="" class="img-container-img">
+                            <figcaption class="text-img-container common-para-class">
+                                <h6>Excellent Workers</h6>
+                                <p>This depicts that user have to fix appointment first when it selects a particular
+                                    food
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="how-it-works-button">
+
+                    <button onclick="show6()" class="common-how-it-work-class"
+                        style="border: 0.1rem solid var(--dark-grey);">
+                        <span class="number" style="font-size: 1.1rem; color: var(--light-grey);">06</span>
+                        <span class="text" style="font-size: 1.2rem; color: var(--light-grey);">Payment</span>
+                    </button>
+
+                    <div class="another-1">
+                        <figure class="how-it-works-img-container hide-img-container" style="display: none;">
+                            <img src="../images/payment.jpeg"
+                                alt="" class="img-container-img">
+                            <figcaption class="text-img-container common-para-class">
+                                <h6>Payment</h6>
+                                <p>This depicts that user have to fix appointment first when it selects a particular
+                                    doctor
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="how-it-works-button works-button-last">
+
+                    <button onclick="show7()" class="common-how-it-work-class"
+                        style="border: 0.1rem solid var(--dark-grey);">
+                        <span class="number" style="font-size: 1.1rem; color: var(--light-grey);">07</span>
+                        <span class="text" style="font-size: 1.2rem; color: var(--light-grey);">Affordable Price</span>
+                    </button>
+
+                    <div class="another-1">
+                        <figure class="how-it-works-img-container hide-img-container" style="display: none;">
+                            <img src="../images/affordable-price.jpeg"
+                                alt="" class="img-container-img">
+                            <figcaption class="text-img-container common-para-class">
+                                <h6>Affordable Price</h6>
+                                <p>This depicts that user have to fix appointment first when it selects a particular
+                                    doctor
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- how-we-works-section-completed -->
+
+
+
+<!-- footer-section -->
+
+    <script src="../js/button.js"></script>
 </body>
+
 </html>

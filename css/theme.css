@@ -16,7 +16,7 @@
 :root {
     /* --dark-blue: #2a2d3e; */
     --light-blue: #9cbfda;
-    --bright-blue: #0173b2;
+    --bright-blue: #6f4e37;
     --dark-blue: #021433;
     --bg-blue:#8fcaf1;
     --grey: #636668;
@@ -352,4 +352,5 @@ span {
         border: 0.12rem solid var(--dark-grey);
     }
 }   */
+
 

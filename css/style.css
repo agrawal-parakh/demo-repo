@@ -1,0 +1,156 @@
+.header-img {
+    width: 2rem;
+}
+
+.header-icon {
+    color: var(--dark-grey);
+}
+
+.desktop-list {
+    display: none;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-header-list, .desktop-header-icons {
+    display: none;
+}
+
+.image-gallery-portion-common {
+    height: 14rem;
+}
+
+.desktop-crauser {
+    display: none;
+}
+
+.how-it-works-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.how-it-works-heading h2 {
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+}
+
+.common-para-class p {
+    text-align: center;
+}
+
+.how-it-works-button-all {
+    display: grid;
+}
+
+.how-it-works-button {
+    display: grid;
+    padding-bottom: 1rem;
+}
+
+.common-how-it-work-class {
+    text-align: left;
+    border: 0.1rem solid var(--dark-grey);
+    border-radius: 0.4rem;
+    background-color: var(--white);
+}
+
+.active-btn-1 {
+    border: 0.1rem solid var(--bright-blue);
+}
+
+.another-1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-it-works-img-container {
+    width: 20rem;
+}
+
+.how-it-works-img-container img {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.text-img-container {
+    text-align: center;
+}
+
+.text-img-container p {
+    margin-bottom: 0.4rem;
+}
+
+.common-para-class p {
+    text-align: center;
+}
+
+@media only screen and (min-width:768px) {
+    .header-img {
+        width: 2.5rem;
+    }
+    .header-icon {
+        font-size: 1.5rem;
+    }
+    .image-gallery-portion-common {
+        height: 18rem;
+    }
+    .how-it-works-button {
+        display: grid;
+        width: 47%;
+    }
+    .how-it-works-img-container {
+        position: relative;
+        width: 17rem;
+    }
+    .another-1 {
+        position: absolute;
+        left: 30rem;
+        top: 39rem;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .header-icon {
+        display: none;
+    }
+    .desktop-header-list, .desktop-header-icons {
+        display: block;
+    }
+    .desktop-header-list ul {
+        display: flex;
+    }
+    .desktop-header-list li {
+        padding: 1rem;
+    }
+    .desktop-header-icons i {
+        padding: 1rem;
+        color: var(--grey);
+    }
+    .image-gallery-portion-common {
+        height: 30rem;
+    }
+    .desktop-crauser {
+        display: block;
+    }
+    .another-1 {
+        left: 41rem;
+        top: 59rem;
+    }
+}
+
+@media only screen and (min-width:1300px) {
+    .another-1 {
+        left: 60rem;
+    }
+}
+
+@media only screen and (min-width:1800px) {
+    .another-1 {
+        left: 90rem;
+    }
+}
