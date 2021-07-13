@@ -1,0 +1,130 @@
+body {
+    /* background-color: var(--light-blue); */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+form {
+    padding: 1.5rem 1rem;
+}
+
+.signup-form {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signup-form h3 {
+    color: var(--bright-blue);
+    font-size: 1.2rem;
+    padding: 2rem;
+    margin: 0rem;
+    border-bottom: 0.1rem solid var(--light-grey);
+}
+
+.signup-select{
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+    color: var(--light-grey);
+    appearance: none;
+}
+
+#signup-date{
+    border: 1px solid var(--light-grey);
+    color: var(--light-grey);
+}
+
+.signup-form-container input{
+    border: 1px solid var(--light-grey);
+}
+
+
+
+.signup-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-container>input{
+    width: 100%;
+    border:0.1rem solid var(--light-grey)
+}
+.signup-container-city{
+    margin-right: 0.5rem;
+}
+
+/* hide calendar-picker-indicator */
+::-webkit-calendar-picker-indicator { display: none }
+
+
+.already-register {
+    display: flex;
+    justify-content: center;
+}
+
+.already-register h6 {
+    color: var(--mix-grey);
+}
+
+.already-register a {
+    font-family: BoldFont;
+    color: var(--bright-blue);
+}
+
+.signup-form ::placeholder,.already-register h6 {
+    font-size: 0.8rem;
+    font-family: BoldFont;
+}
+
+.icon-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+i.fas.fa-caret-down{
+    position: absolute;
+    padding-top: 0.7rem;
+    /* border-right: 0.2rem solid var(--mix-grey); */
+    padding-bottom: 0.9rem;
+    /* border-bottom: 0.1rem solid var(--mix-grey); */
+    background-color:var(--whitesmoke);
+    font-size: 0.7rem;
+}
+
+i.fas.fa-arrow-right {
+    color: var(--white);
+    position: absolute;
+    padding: 1rem;
+}
+
+.footer-login h6{
+    text-align: center;
+    font-size: 0.8rem;
+    word-spacing: 0.1rem;
+}
+
+@media only screen and (min-width:768px) {
+    .signup-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup-form{
+       width: 65%;
+    }
+    .footer-login h6{
+        font-size: 1rem;
+    }
+ 
+}
+
+@media only screen and (min-width:1024px){
+    .signup-form{
+        width: 50%;
+    }
+}

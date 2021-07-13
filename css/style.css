@@ -89,6 +89,28 @@
     text-align: center;
 }
 
+.all-cards{
+    border: 1px solid red;
+    width: 20rem;
+    height: 20rem;
+}
+
+.image-gallery-portion-common img{
+    width: 20rem;
+    height: 14rem;
+}
+
+.tablet-footer-section {
+    display: none;
+}
+.footer-mobile{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 @media only screen and (min-width:768px) {
     .header-img {
         width: 2.5rem;
@@ -111,6 +133,44 @@
         position: absolute;
         left: 30rem;
         top: 39rem;
+    }
+    .image-gallery-portion-common img{
+        width: 100%;
+        height: 21rem;
+    }
+
+    .tablet-footer-section {
+        display: block;
+    }
+    .merge {
+        display: grid;
+        align-items: center;
+        grid-template: 1fr/3fr 1fr;
+    }
+    .footer-end {
+        display: grid;
+        justify-content: flex-start;
+    }
+    .darkblue-colour, .darkblue-colour h6 {
+        color: var(--dark-blue);
+    }
+    .darkblue-colour, .darkblue-colour h6 {
+        color: var(--dark-blue);
+    }
+    .tablet-social-media-icons i {
+        margin-right: 1rem;
+    }
+    .tablet-footer-list>ul {
+        display: flex;
+    }
+    .tablet-footer-list>ul>li {
+        margin-right: 1rem;
+    }
+    .tablet-footer-list>ul>li>a {
+        font-size: 1rem;
+    }
+    .footer-mobile{
+        display: none;
     }
 }
 
@@ -141,6 +201,51 @@
         left: 41rem;
         top: 59rem;
     }
+    .image-gallery-portion-common img{  
+        height: 33rem;
+    }
+
+
+    .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+  
+  
 }
 
 @media only screen and (min-width:1300px) {
